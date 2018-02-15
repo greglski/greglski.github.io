@@ -139,6 +139,7 @@ $(document).ready(function() {
       }),
       complete: function() {
         getAllTasks();
+        document.forms[0].reset();
       }      
     });
   }
