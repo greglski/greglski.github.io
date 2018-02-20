@@ -64,6 +64,7 @@ $(document).ready(function() {
 
   function getAllTasks() {
     const requestUrl = apiRoot + 'tasks';
+    $('#modal').fadeIn(5000);
 
     $.ajax({
       url: requestUrl,
@@ -75,6 +76,8 @@ $(document).ready(function() {
         });
 
         getAllAvailableBoards(handleDatatableRender, tasks);
+
+        $('#modal').hide();
       }
     });
   }

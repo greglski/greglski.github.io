@@ -156,3 +156,24 @@ body {
 
 .template {
   display: none; }
+
+.modal {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 30%;
+  background-color: rgba(0, 0, 0, 0.575);
+  display: none;    
+}  
+  
+.modal-content {
+  background-color: #28a745;
+  color: seashell;
+  padding: 2em;
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
